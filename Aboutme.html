@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>About me</title>
+ </head>
+ <body>
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo"><li><img src="Logo.png" width="60px" height="60px"></li></div>
+     <div class="logo">About me</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="Aboutme.html">About me</a></li>
+         <li><a href="Games.html">Games</a></li>
+         <li><a href="Experiences.html">My Experiences</a></li>
+         <li><a href="index.html">Social Media</a></li>
+         
+      </div>
+
+      <div>
+        <button id="button_for_text_1" onclick=text_show_1()>My Background</button>
+        <button id="button_for_text_2" onclick=text_show_2()>My Family</button>
+        <button id="button_for_text_3" onclick=text_show_3()>My Hobbies</button>
+        <button id="button_for_text_4" onclick=text_show_4()>My Life right now</button>
+      </div>
+      <div class="meme-text" >
+         
+        <h2>About me </h2>
+        <h2>Hello everyone! My name is Alex Torkamani and here you will learn a little bit more about me! Press on the button which you want to know more about!</h2>
+        <h1 id="text_for_about_me"></h1>
+      </div>
+      <div class="image_for_about_me">
+        <li><img id="image_for_about_me_1" src="" alt=""></li>
+        <li><img id="image_for_about_me_2" src="" alt=""></li>
+        <li><img id="image_for_about_me_3" src="" alt=""></li>
+      </div>
+    </ul>
+   </nav>
+
+   <style>
+    body {
+      background-image: url('SpaceXShip 2.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    #image_for_about_me_1{
+      width: 250px;
+      height: 175px;
+    }
+    #image_for_about_me_2{
+      width: 250px;
+      height: 175px;
+    }
+    #image_for_about_me_3{
+      width: 250px;
+      height: 175px;
+    }
+    
+    </style>
+
+    <script>
+      function text_show_1(){
+        var text = document.getElementById("text_for_about_me")
+        text.textContent = "I am originaly from Afghanistan but I have also lived in Turkey for 7 or 8 years. Most of my childhood was spend in Turkey but I have lived in Afghanistan for 3 years in total I believe. Right now I am living in Sweden and have lived here for close to 8 years now. Even if I am from Afghanistan, I don't like my country, I love Sweden much more than Afghanistan."
+        var image_1 = document.getElementById("image_for_about_me_1")
+        image_1.src = "Afghanistan.png"
+        var image_2 = document.getElementById("image_for_about_me_2")
+        image_2.src = "Turkey.png"
+        var image_3 = document.getElementById("image_for_about_me_3")
+        image_3.src = "Sweden.png"
+        var body = document.querySelector('body');
+        body.style.backgroundImage = "url('background-image-1.png')";
+      
+      }
+      function text_show_2(){
+        var text = document.getElementById("text_for_about_me")
+        text.textContent = "I have 2 brothers which I love dearly. Me and my brothers live with our parents, all five of us. Our house is located in Västerhaninge, it's not that big but not that small either. I at least have my own room which is pretty convinient. Other than them I have many relatives but I don't talk to them that much. As for myself I would like to one day start a family, because I believe that marrige and family brings prosperity to a man or a woman."
+        var image_1 = document.getElementById("image_for_about_me_1")
+        image_1.src = ""
+        var image_2 = document.getElementById("image_for_about_me_2")
+        image_2.src = ""
+        var image_3 = document.getElementById("image_for_about_me_3")
+        image_3.src = ""
+        var body = document.querySelector('body');
+        body.style.backgroundImage = "url('background-image-1.png')";
+      }
+      function text_show_3(){
+        var text = document.getElementById("text_for_about_me")
+        text.textContent = "My Hobbies are playing games, spending time with family, reading books, reading manga, watching anime, learning about new topics and spending time with my friends. Even if they bully me most of the time, I still hold them very dear to me. It's fun to hang out with them but sometimes they are very annoying to the point that it makes my blood boil. But either way they are very good friends to have near yourself. I try to spend as much time as possible on my family but studies usually doesn't let that. This isn't really a hobby, more of a political ideology, but I am a monarchist and I love stuff related to the royal family."
+        var image_1 = document.getElementById("image_for_about_me_1")
+        image_1.src = "friends.png"
+        var image_2 = document.getElementById("image_for_about_me_2")
+        image_2.src = "me_and_jainam.png"
+        var image_3 = document.getElementById("image_for_about_me_3")
+        image_3.src = "kung.png"
+        var body = document.querySelector('body');
+        body.style.backgroundImage = "url('background-image-2.png')";
+      }
+      function text_show_4(){
+        var text = document.getElementById("text_for_about_me")
+        text.textContent = "In todays world, many people are depressed and they usually don't have any friends that they can rely on and because I am aware of that fact, I am very grateful for people around me and that they are still with me. My best friend which I have been friends for 5 or 6 years now, we have gone through everything together and we have basically matured toghether. We have done all the cringy stuff and now we laugh at it and remember the good times. So I believe that I am pretty successfull in life right now both academicaly and socially so I am content with my life."
+        var image_1 = document.getElementById("image_for_about_me_1")
+        image_1.src = ""
+        var image_2 = document.getElementById("image_for_about_me_2")
+        image_2.src = "friends_2.png"
+        var image_3 = document.getElementById("image_for_about_me_3")
+        image_3.src = ""
+        var body = document.querySelector('body');
+        body.style.backgroundImage = "url('background-image-2.png')";
+      }
+
+    </script>
+   
+ </body>
+
+</html>

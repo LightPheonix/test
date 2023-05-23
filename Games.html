@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Games</title>
+ </head>
+ <body class="background">
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo"><li><img src="Logo.png" width="60px" height="60px"></li></div>
+     <div class="logo">Games</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="Aboutme.html">About me</a></li>
+         <li><a href="Games.html">Games</a></li>
+         <li><a href="Experiences.html">My Experiences</a></li>
+         <li><a href="index.html">Social Media</a></li>
+         
+       </div>
+      <div id="youtube-video">
+        <iframe id="youtube-video-1" width="400" height="300" src="" title="Causing Climate Change in Age of Wonders 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </ul>
+   </nav>
+   <div class="meme-text2">
+    <h2>In this tab, you will be able know a little bit more about my game "addiction" according to my friends.</h2>
+   </div>
+
+   <div>
+    <h2 id="text-for-video">
+    </h2>
+  </div>
+
+  <div class="button_for_video">
+    <button id="button_for_video_1" onclick=video_show_1()>Hearts of Iron IV</button>
+    <button id="button_for_video_2" onclick=video_show_2()>Europa Universalis IV</button>
+    <button id="button_for_video_3" onclick=video_show_3()>Victoria III</button>
+    <button id="button_for_video_4" onclick=video_show_4()>Stellaris</button>
+    <button id="button_for_video_5" onclick=video_show_5()>Cities Skylines</button>
+    <button id="button_for_video_6" onclick=video_show_6()>Mount and Blade Warband</button>
+  </div>
+  <div id="div-1">
+    <h2 id="event-listener-text-1">Valorant</h2>
+    <img id="event-listener-image-1" src="angry-face.png" alt="">
+  </div>
+  <div id="div-2">
+    <p id="event-listener-text-2">Europa Universalis IV</p>
+    <img id="event-listener-image-2" src="smiley-emoji.png" alt="">
+  </div>
+ </body>
+<script>
+function video_show_1(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "In Hearts of Iron you can choose one of the existing nations during the WW2 era and play as them until 1948. I only play this game online with friends or with Christer."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/wxMA6k9ziiU"
+}
+function video_show_2(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "In Europa Universalis you can choose a nation during the renaissance and playing until the early industrial ages. This game introduced me to the rabit hole which is paradox games, so it has a special place in my heart."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/5iZksqjUnxs"
+}
+function video_show_3(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "Victoria III is a economic simulator where you can choose one country during the industrial revolution. You can either conquer others or bring up your people's standart of living and make their life easier by giving them universal health care and universal education. I like the economics aspect of this game a lot."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/vQh-Ooqqw9U"
+}
+function video_show_4(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "In Stellaris you build your own Galactic Empire either by accepting the foreign races with open arms or by bearing arms against them. You have to research new technologies and colonize new planets to survive in the universe that your Empire lays in."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/mUaau0cMKWA"
+}
+function video_show_5(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "In Cities Skylines, you build your own city, you have to build everything from ground up. If you don't do your job as the mayor correctly, the citizens will leave your city, and you will be left alone without their taxes. So do your best."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/llQ3Q4WW65A"
+}
+function video_show_6(){
+  var text = document.getElementById("text-for-video")
+  text.textContent = "In Mount and Blade Bannerlord, your are the lord of a medieval army which you have to lead. You can create your own kingdom with the help of your clan. Without your family backing you, it will be pretty hard conquering Calradia."
+  var video = document.getElementById("youtube-video-1")
+  video.src = "https://youtube.com/embed/O4SGkSn9FDk"
+
+
+}
+</script>
+</html>
