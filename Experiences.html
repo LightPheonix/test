@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="Logo.png">
         <title>My Experiences</title>
 
     </head>
@@ -20,7 +21,7 @@
                 <li><a href="Aboutme.html">About me</a></li>
                 <li><a href="Games.html">Games</a></li>
                 <li><a href="Experiences.html">My Experiences</a></li>
-                <li><a href="index.html">Social Media</a></li>
+                <li><a href="index.html">Quiz</a></li>
               </div>
              
     </body>
@@ -32,17 +33,39 @@
             <p>
                 I have worked at a couple of jobs before but all of them were pratik jobs. Here is a list of the jobs that I have worked in.
             </p>
+            <p id="exp-text-2">
+
+            </p>
             <ul>
-                <li>Proline Öst</li>
-                <li>ICA Supermarkets</li>
-                <li>Haninge Kommun</li>
+                <li><button id="button-for-experience-1" onclick="experience_button_function_1()">Haninge Kommun</button></li>
+                <li><button id="button-for-experience-2" onclick="experience_button_function_2()">Proline Öst</button></li>
+                <li><button id="button-for-experience-3" onclick="experience_button_function_3()">ICA</button></li>
             </ul>
         </div>
         <div class="pictures">
-            <img src="Haninge.png" alt="Haninge Kommun">
-            <img src="ICA.png" alt="ICA SUpermarkets">
-            <img src="Proline.png" alt="Proline Öst">
+            <img id="picture-experience-1" src="" alt="">
         </div>
+
+        <script>
+        function experience_button_function_1() {
+            var picture_1 = document.getElementById("picture-experience-1")
+            picture_1.src = "Haninge.png"
+            var text_1 = document.getElementById("exp-text-2")
+            text_1.textContent="I worked at Haningen Kommun as a janitor. In the summer of 2022 I worked in a summer job, so basically we had to go around Haninge and clean the beaches and also mantain Västerhaninge's fotboll field. It was a pretty fun time."   
+        }
+        function experience_button_function_2() {
+            var picture_2 = document.getElementById("picture-experience-1")
+            picture_2.src = "Proline.png"
+            var text_2 = document.getElementById("exp-text-2")
+            text_2.textContent="I worked at Pronline Öst in 2018 as a archivier. In 2018 I was in grade 8 and we had to find a job which we could intern(praktik) in and I got this job through my dad and his connections. I had to organize the files in the archieves."   
+        }
+        function experience_button_function_3() {
+            var picture_3 = document.getElementById("picture-experience-1")
+            picture_3.src = "ICA.png"
+            var text_3 = document.getElementById("exp-text-2")
+            text_3.textContent="I worked at ICA in 2019 summer so that I could earn some money for myself. With the money I bought some games for myself but later on when I didn't have anymore freetime I had to leave. It was pretty boring because it was in the storage."   
+        }
+        </script>
         
     </body>
 </html>

@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="style.css" />
+   <link rel="icon" href="Logo.png">
    <title>Games</title>
  </head>
  <body class="background">
@@ -19,7 +20,7 @@
          <li><a href="Aboutme.html">About me</a></li>
          <li><a href="Games.html">Games</a></li>
          <li><a href="Experiences.html">My Experiences</a></li>
-         <li><a href="index.html">Social Media</a></li>
+         <li><a href="index.html">Quiz</a></li>
          
        </div>
       <div id="youtube-video">
@@ -46,11 +47,12 @@
   </div>
   <div id="div-1">
     <h2 id="event-listener-text-1">Valorant</h2>
-    <img id="event-listener-image-1" src="angry-face.png" alt="">
   </div>
   <div id="div-2">
     <p id="event-listener-text-2">Europa Universalis IV</p>
-    <img id="event-listener-image-2" src="smiley-emoji.png" alt="">
+  </div>
+  <div id="emoji">
+    <img id="event-listener-image-1" src="" alt="" width="200px" height="200px">
   </div>
  </body>
 <script>
@@ -89,8 +91,25 @@ function video_show_6(){
   text.textContent = "In Mount and Blade Bannerlord, your are the lord of a medieval army which you have to lead. You can create your own kingdom with the help of your clan. Without your family backing you, it will be pretty hard conquering Calradia."
   var video = document.getElementById("youtube-video-1")
   video.src = "https://youtube.com/embed/O4SGkSn9FDk"
-
-
 }
+
+var division_1 = document.getElementById("div-1")
+var division_2 = document.getElementById("div-2")
+var picture = document.getElementById("event-listener-image-1")
+division_1.addEventListener("mouseover", my_function_1)
+division_2.addEventListener("mouseover", my_function_2)
+division_1.addEventListener("mouseout", my_function_3)
+division_2.addEventListener("mouseout", my_function_3)
+
+function my_function_1() {
+  picture.src="angry-face.png"
+}
+function my_function_2() {
+  picture.src="happy-emoji.png"
+}
+function my_function_3() {
+  picture.src=""
+}
+
 </script>
 </html>
